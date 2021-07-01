@@ -13,7 +13,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Log.d("MainActivity", "Happy Birthday to Manoshi");
         try {
-        } catch (Exception e) {
+            int x = 45/0;
+        }
+        catch (Exception e) {
             Log.e("MainActivity", "Happy Birthday");
         }
     }
