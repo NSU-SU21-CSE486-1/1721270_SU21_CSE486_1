@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="500sp"
-        android:text="The Beijing Institute of Biological Products, Sinopharm vaccine is a vaccine that aims to protect against COVID-19.Challenge: Create an app with three Button elements labeled Text One, Text Two, and Text Three. When any of these Button elements are clicked, launch a second Activity. That second Activity should contain a ScrollView that displays one of three text passages (you can include your choice of passages). Use an Intent to launch the second Activity with extras to indicate which of the three passages to display."
+        android:text="The word K-pop has, of late, become almost synonymous with the letters B, T and S. But there’s another K-pop group that’s been breaking records as their music captures the attention of a global audience. The four women of Blackpink, who debuted as a group in 2016, comprise a multilingual performance powerhouse connecting with fans across borders. Jisoo, Jennie, Rosé and Lisa may have just begun touring globally, but a strong fanbase stretching far beyond South Korea is already powering their rapid ascent."
         android:textSize="25sp"/>
 
 </ScrollView>
