@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    tools:context=".Main2Activity">
+    android:layout_height="300sp"
+    android:layout_gravity="center"
+    android:fillViewport="true"
+    android:padding="16dp">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="The Oxford, AstraZeneca vaccine is a vaccine that aims to protect against COVID-19."
-        android:textSize="20sp"/>
+        android:layout_width="match_parent"
+        android:layout_height="500sp"
+        android:text="The Beijing Institute of Biological Products, Sinopharm vaccine is a vaccine that aims to protect against COVID-19.Challenge: Create an app with three Button elements labeled Text One, Text Two, and Text Three. When any of these Button elements are clicked, launch a second Activity. That second Activity should contain a ScrollView that displays one of three text passages (you can include your choice of passages). Use an Intent to launch the second Activity with extras to indicate which of the three passages to display."
+        android:textSize="25sp"/>
 
-</LinearLayout>
+</ScrollView>

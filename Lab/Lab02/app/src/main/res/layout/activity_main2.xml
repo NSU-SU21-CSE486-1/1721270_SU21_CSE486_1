@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    tools:context=".Main2Activity">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="300sp"
+     android:layout_gravity="center"
+     android:fillViewport="true"
+     android:padding="16dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="The Beijing Institute of Biological Products, Sinopharm vaccine is a vaccine that aims to protect against COVID-19."
-        android:textSize="20sp"/>
-
-</LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="500sp"
+            android:text="The available data on the COVID-19 vaccine BIBP in pregnant women are insufficient to assess either vaccine efficacy or vaccine-associated risks in pregnancy. However, this vaccine is an inactivated vaccine with an adjuvant that is routinely used in many other vaccines with a documented good safety profile, including in pregnant women. The effectiveness of the COVID-19 vaccine BIBP in pregnant women is therefore expected to be comparable to that observed in non-pregnant women of similar age. In the interim, WHO recommends the use of the COVID-19 vaccine BIBP in pregnant women when the benefits of vaccination to the pregnant woman outweigh the potential risks. To help pregnant women make this assessment, they should be provided with information about the risks of COVID-19 in pregnancy; the likely benefits of vaccination in the local epidemiological context; and the current limitations of safety data in pregnant women. WHO does not recommend pregnancy testing prior to vaccination. WHO does not recommend delaying pregnancy or considering terminating pregnancy because of vaccination."
+            android:textSize="25sp"/>
+</ScrollView>
