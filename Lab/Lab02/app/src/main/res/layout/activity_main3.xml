@@ -9,7 +9,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="500sp"
-        android:text="The Beijing Institute of Biological Products, Sinopharm vaccine is a vaccine that aims to protect against COVID-19.Challenge: Create an app with three Button elements labeled Text One, Text Two, and Text Three. When any of these Button elements are clicked, launch a second Activity. That second Activity should contain a ScrollView that displays one of three text passages (you can include your choice of passages). Use an Intent to launch the second Activity with extras to indicate which of the three passages to display."
+        android:text="BTS, an acronym of Bangtan Sonyeondan or “Beyond the Scene,” is a Grammy-nominated South Korean group that has been capturing the hearts of millions of fans globally since its debut in June 2013. The members of BTS are RM, Jin, SUGA, j-hope, Jimin, V, and Jung Kook. Gaining recognition for their authentic and self-produced music, top-notch performances, and the way they interact with their fans, BTS has established themselves as “21st century Pop Icons” breaking countless world records. While imparting a positive influence through activities such as the LOVE MYSELF campaign and the UN ‘Speak Yourself’ speech, the band has mobilized millions of fans across the world (named ARMY), topped the Billboard Hot 100 chart three times in 2020 alone, performed multiple sold-out stadium shows across the world, and been named TIME’s Entertainer of the Year 2020.
+"
         android:textSize="25sp"/>
 
 </ScrollView>
