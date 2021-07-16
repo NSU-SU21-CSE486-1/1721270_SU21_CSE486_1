@@ -19,7 +19,7 @@
         android:layout_gravity="center"
         android:textSize="20sp" />
     <fragment
-        android:name="com.example.lab03_task01.fragment01"
+        android:name="com.example.lab03_task01.fragment01activity"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/fragment"
