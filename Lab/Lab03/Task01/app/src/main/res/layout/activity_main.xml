@@ -12,4 +12,10 @@
         android:text="Fragment01"
         android:layout_gravity="center"
         android:textSize="20sp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Fragment02"
+        android:layout_gravity="center"
+        android:textSize="20sp" />
     </LinearLayout>
