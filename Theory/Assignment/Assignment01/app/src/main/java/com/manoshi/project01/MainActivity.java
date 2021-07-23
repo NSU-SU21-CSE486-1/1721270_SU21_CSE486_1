@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
@@ -23,8 +24,9 @@ public class MainActivity extends AppCompatActivity {
         EditText editText4 = findViewById(R.id.textinput4);
         String message = editText1.getText().toString() + "," +
                 editText2.getText().toString() + "," +
-                editText3.getText().toString() + "&" +
+                editText3.getText().toString() + "," +
                 editText4.getText().toString() ;
+        Log.i("message", message);
         intent.putExtra(MSG, message);
         startActivity(intent);
     }
