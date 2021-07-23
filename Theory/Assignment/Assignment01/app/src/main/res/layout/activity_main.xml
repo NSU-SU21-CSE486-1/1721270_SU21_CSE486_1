@@ -47,7 +47,7 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName4"
-        android:layout_width="260dp"
+        android:layout_width="264dp"
         android:layout_height="53dp"
         android:ems="10"
         android:inputType="textPersonName"
@@ -64,4 +64,12 @@
         android:text="Blood Group:"
         tools:layout_editor_absoluteX="47dp"
         tools:layout_editor_absoluteY="363dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="240dp"
+        tools:layout_editor_absoluteY="458dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
