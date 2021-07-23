@@ -26,7 +26,7 @@
         app:layout_constraintVertical_bias="0.069" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/textinput1"
         android:layout_width="262dp"
         android:layout_height="46dp"
         android:layout_marginStart="20dp"
@@ -44,44 +44,44 @@
         app:layout_constraintVertical_bias="0.21" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/textinput2"
         android:layout_width="262dp"
         android:layout_height="53dp"
         android:ems="10"
         android:hint="Date of birth:"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
+        app:layout_constraintEnd_toEndOf="@+id/textinput1"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
+        app:layout_constraintStart_toStartOf="@+id/textinput1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.305" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/textinput3"
         android:layout_width="264dp"
         android:layout_height="53dp"
         android:ems="10"
         android:hint="NID:"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName3"
+        app:layout_constraintEnd_toEndOf="@+id/textinput2"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
+        app:layout_constraintStart_toStartOf="@+id/textinput2"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.414" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/textinput4"
         android:layout_width="259dp"
         android:layout_height="44dp"
         android:ems="10"
         android:hint="Blood Group:"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName4"
+        app:layout_constraintEnd_toEndOf="@+id/textinput3"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
+        app:layout_constraintStart_toStartOf="@+id/textinput3"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.529" />
 
