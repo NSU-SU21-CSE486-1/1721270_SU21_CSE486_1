@@ -35,7 +35,7 @@ public class UniversityAffiliation extends AppCompatActivity implements AdapterV
         Spinner spinner3 = findViewById(R.id.spinner3);
         ArrayAdapter<CharSequence> adapter3 = ArrayAdapter.createFromResource(this, R.array.StudyLevel, android.R.layout.simple_spinner_item);
         adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner3.setAdapter(adapter2);
+        spinner3.setAdapter(adapter3);
     }
 
     @Override
