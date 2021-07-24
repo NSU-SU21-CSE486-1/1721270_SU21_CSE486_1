@@ -12,4 +12,10 @@
         <item>Archi</item>
         <item>Civil</item>
     </string-array>
+    <string-array name="StudyLevel">
+        <item>Undergraduate</item>
+        <item>MS</item>
+        <item>PhD</item>
+        <item>Post-Doc</item>
+    </string-array>
 </resources>
