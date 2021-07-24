@@ -6,4 +6,10 @@
         <item>BUET</item>
         <item>DU</item>
     </string-array>
+    <string-array name="Department">
+        <item>ECE</item>
+        <item>Math and Physics</item>
+        <item>Archi</item>
+        <item>Civil</item>
+    </string-array>
 </resources>
