@@ -48,4 +48,16 @@ public class UniversityAffiliation extends AppCompatActivity implements AdapterV
 
     }
 
+    public void buttonNext(View view) {
+        Intent intent = new Intent(this, ThirdActivity.class);
+        EditText editText1 = findViewById(R.id.spinner1);
+        EditText editText2 = findViewById(R.id.spinner2);
+        EditText editText3= findViewById(R.id.spinner3);
+        String message = editText1.getText().toString() + "," +
+                editText2.getText().toString() + "," +
+                editText3.getText().toString();
+        intent.putExtra(MSG, message);
+        startActivity(intent);
+    }
+
 }
