@@ -22,9 +22,9 @@ public class MainActivity extends AppCompatActivity {
         EditText editText2 = findViewById(R.id.textinput2);
         EditText editText3= findViewById(R.id.textinput3);
         EditText editText4 = findViewById(R.id.textinput4);
-        String message = editText1.getText().toString() + "," +
-                editText2.getText().toString() + "," +
-                editText3.getText().toString() + "," +
+        String message = "Name: " + editText1.getText().toString() + "\nDate of Birth: " +
+                editText2.getText().toString() + "\nNID: " +
+                editText3.getText().toString() + "\nBlood Group: " +
                 editText4.getText().toString() ;
         Log.i("message", message);
         intent.putExtra(MSG, message);
