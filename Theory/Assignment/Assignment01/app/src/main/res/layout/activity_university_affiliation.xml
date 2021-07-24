@@ -44,14 +44,14 @@
 
     <Spinner
         android:id="@+id/spinner2"
-        android:layout_width="193dp"
-        android:layout_height="34dp"
+        android:layout_width="201dp"
+        android:layout_height="35dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.798"
+        app:layout_constraintHorizontal_bias="0.828"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.427" />
+        app:layout_constraintVertical_bias="0.431" />
 
     <TextView
         android:id="@+id/textView4"
@@ -111,8 +111,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Next"
-        tools:layout_editor_absoluteX="256dp"
-        tools:layout_editor_absoluteY="513dp" />
+        tools:layout_editor_absoluteX="285dp"
+        tools:layout_editor_absoluteY="507dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
