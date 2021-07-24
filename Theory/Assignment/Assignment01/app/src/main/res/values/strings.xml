@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Project01</string>
+    <string-array name="UniversityName">
+        <item>NSU</item>
+        <item>BracU</item>
+        <item>BUET</item>
+        <item>DU</item>
+    </string-array>
 </resources>
