@@ -13,4 +13,5 @@ public class FifthActivity extends AppCompatActivity {
         setContentView(R.layout.activity_fifth);
         message = getIntent().getStringExtra(ForthActivity.MSG);
     }
+
 }

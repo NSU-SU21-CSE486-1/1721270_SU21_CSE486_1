@@ -7,7 +7,7 @@
     tools:context=".FifthActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewFullInfo"
         android:layout_width="220dp"
         android:layout_height="434dp"
         android:text="TextView"
