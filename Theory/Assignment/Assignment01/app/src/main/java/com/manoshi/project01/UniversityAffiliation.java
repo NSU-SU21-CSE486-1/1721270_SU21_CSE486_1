@@ -54,11 +54,12 @@ public class UniversityAffiliation extends AppCompatActivity implements AdapterV
         Spinner spinner2 = findViewById(R.id.spinner2);
         Spinner spinner3 = findViewById(R.id.spinner3);
         EditText editText = findViewById(R.id.editTextTextPersonName);
-        String message = spinner1.getSelectedItem().toString() + "," +
-                spinner2.getSelectedItem().toString() + "," +
-                spinner3.getSelectedItem().toString()+ "," +
+        String message = "University: " + spinner1.getSelectedItem().toString() + "\nDepartment: " +
+                spinner2.getSelectedItem().toString() + "\nStudy Level: " +
+                spinner3.getSelectedItem().toString()+ "\nStudent ID: " +
                 editText.getText().toString();
         intent.putExtra(MSG, message);
+
         startActivity(intent);
     }
 
