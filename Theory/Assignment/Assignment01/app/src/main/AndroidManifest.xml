@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Project01">
-        <activity android:name=".ForthActivity"></activity>
+        <activity android:name=".FifthActivity"></activity>
+        <activity android:name=".ForthActivity" />
         <activity android:name=".ThirdActivity" />
         <activity
             android:name=".UniversityAffiliation"
