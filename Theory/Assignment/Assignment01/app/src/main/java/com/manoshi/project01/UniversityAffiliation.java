@@ -56,7 +56,7 @@ public class UniversityAffiliation extends AppCompatActivity implements AdapterV
         EditText editText = findViewById(R.id.editTextTextPersonName);
         String message = "University: " + spinner1.getSelectedItem().toString() + "\nDepartment: " +
                 spinner2.getSelectedItem().toString() + "\nStudy Level: " +
-                spinner3.getSelectedItem().toString()+ "\nStudent ID: " +
+                spinner3.getSelectedItem().toString() + "\n" +
                 editText.getText().toString();
         intent.putExtra(MSG, message);
 
