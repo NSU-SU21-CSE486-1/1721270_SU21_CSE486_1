@@ -15,13 +15,14 @@ import android.widget.Toast;
 
 public class UniversityAffiliation extends AppCompatActivity implements AdapterView.OnItemClickListener {
     public static final String MSG = "com.manoshi.project01.MSG";
+    private String message;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_university_affiliation);
         Intent intent = getIntent();
-        String message = intent.getStringExtra(MainActivity.MSG);
+        message = intent.getStringExtra(MainActivity.MSG);
         TextView textView = findViewById(R.id.info);
         textView.setText(message);
 
@@ -54,12 +55,11 @@ public class UniversityAffiliation extends AppCompatActivity implements AdapterV
         Spinner spinner2 = findViewById(R.id.spinner2);
         Spinner spinner3 = findViewById(R.id.spinner3);
         EditText editText = findViewById(R.id.editTextTextPersonName);
-        String message = "University: " + spinner1.getSelectedItem().toString() + "\nDepartment: " +
+        message += "University: " + spinner1.getSelectedItem().toString() + "\nDepartment: " +
                 spinner2.getSelectedItem().toString() + "\nStudy Level: " +
                 spinner3.getSelectedItem().toString() + "\n" +
                 editText.getText().toString();
         intent.putExtra(MSG, message);
-
         startActivity(intent);
     }
 
