@@ -8,7 +8,9 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
     <EditText
+        android:hint="SELECT DATE"
         android:id="@+id/date_input"
+        android:inputType="none"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
