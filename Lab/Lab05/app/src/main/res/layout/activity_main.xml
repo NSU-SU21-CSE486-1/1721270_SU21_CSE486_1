@@ -12,5 +12,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/play"
         android:background="@android:color/transparent"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_play_arrow_black_24dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </RelativeLayout>
