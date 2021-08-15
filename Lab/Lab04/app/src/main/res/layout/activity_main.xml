@@ -19,5 +19,13 @@
         android:inputType="none"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+    <EditText
+        android:hint="SELECT DATE and TIME"
+        android:id="@+id/date_time_input"
+        android:inputType="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
 
 </LinearLayout >
