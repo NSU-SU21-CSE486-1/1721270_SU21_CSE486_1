@@ -27,9 +27,19 @@ public class MainActivity extends AppCompatActivity {
         date_in.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showDateDialog(date_in)
+                showDateDialog(date_in);
             }
         });
+        time_in.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showTimeDialog(time_in);
+            }
+        });
+    }
+
+    private void showTimeDialog(EditText time_in) {
+
     }
 
     private void showDateDialog(EditText date_in) {
