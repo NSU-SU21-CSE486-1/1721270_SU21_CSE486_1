@@ -2,7 +2,9 @@ package com.manoshi.lab05;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -22,6 +24,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        populateTracks();
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+            createChannel();
+        }
+    }
+
+    private void createChannel() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+            NotificationChannel channel = new NotificationChannel(CreateNotification.CHANNEL_ID,
+                    "Dev", NotificationManager.IMPORTANCE_LOW);
+
+        }
+
     }
 
     private void populateTracks(){
