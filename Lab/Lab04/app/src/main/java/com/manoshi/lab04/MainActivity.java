@@ -3,11 +3,13 @@ package com.manoshi.lab04;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
+import android.app.TimePickerDialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CalendarView;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.TimePicker;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -39,6 +41,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showTimeDialog(EditText time_in) {
+        Calendar calendar = Calendar.getInstance();
+        TimePickerDialog.OnTimeSetListener timeSetListener=new TimePickerDialog.OnTimeSetListener() {
+            @Override
+            public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+
+            }
+        };
 
     }
 
