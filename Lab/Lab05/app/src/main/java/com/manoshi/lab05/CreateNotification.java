@@ -35,6 +35,7 @@ public class CreateNotification {
                     .setShowWhen(false)
                     .setPriority(NotificationCompat.PRIORITY_LOW)
                     .build();
+            notificationManagerCompat.notify(1, notification);
         }
     }
 
