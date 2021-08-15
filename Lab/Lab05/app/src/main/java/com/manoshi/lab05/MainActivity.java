@@ -6,6 +6,7 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -25,11 +26,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        play = findViewById(R.id.play);
+        title = findViewById(R.id.title);
+
         populateTracks();
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
             createChannel();
         }
+        play.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CreateNotification.createNotification(MainActivity.this, tracks.get(1), R.drawable.ic_pause_black_24dp,
+                        1, tracks.size() -1);
+            }
+        });
     }
 
     private void createChannel() {
@@ -37,6 +48,10 @@ public class MainActivity extends AppCompatActivity {
             NotificationChannel channel = new NotificationChannel(CreateNotification.CHANNEL_ID,
                     "Dev", NotificationManager.IMPORTANCE_LOW);
 
+            notificationManager = getSystemService(NotificationManager.class);
+            if (notificationManager != null) {
+                notificationManager.createNotificationChannel(channel);
+            }
         }
 
     }
