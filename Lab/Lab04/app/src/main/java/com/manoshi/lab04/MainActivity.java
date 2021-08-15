@@ -38,6 +38,22 @@ public class MainActivity extends AppCompatActivity {
                 showTimeDialog(time_in);
             }
         });
+        date_time_in.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showDateTimeDialog(date_time_in);
+            }
+        });
+    }
+
+    private void showDateTimeDialog(EditText date_time_in) {
+        Calendar calendar = Calendar.getInstance();
+        DatePickerDialog.OnDateSetListener dateSetListener= new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+
+            }
+        }
     }
 
     private void showTimeDialog(EditText time_in) {
@@ -45,9 +61,14 @@ public class MainActivity extends AppCompatActivity {
         TimePickerDialog.OnTimeSetListener timeSetListener=new TimePickerDialog.OnTimeSetListener() {
             @Override
             public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+                calendar.set(Calendar.HOUR_OF_DAY,hourOfDay);
+                calendar.set(Calendar.MINUTE,minute);
+                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm");
+                time_in.setText(simpleDateFormat.format(calendar));
 
             }
         };
+        new TimePickerDialog(MainActivity.this,timeSetListener,calendar.get(Calendar.HOUR_OF_DAY),calendar.get(Calendar.MINUTE), false).show();
 
     }
 
