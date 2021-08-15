@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void populateTracks(){
         tracks = new ArrayList<>();
-        tracks.add(new Track("Track 1", "Artist 1", R.drawable))
+        tracks.add(new Track("Track 1", "Artist 1", R.drawable.t1));
+        tracks.add(new Track("Track 2", "Artist 2", R.drawable.t2));
+        tracks.add(new Track("Track 3", "Artist 1", R.drawable.t3));
     }
 }
