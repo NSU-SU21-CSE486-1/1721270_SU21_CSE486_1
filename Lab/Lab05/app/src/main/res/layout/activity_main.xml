@@ -10,5 +10,6 @@
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/play"/>
+        android:id="@+id/play"
+        android:background="@android:color/transparent"/>
 </RelativeLayout>
