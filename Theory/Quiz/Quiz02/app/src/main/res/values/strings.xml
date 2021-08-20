@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Project02</string>
-    <string name="tab_text_1">BasicInfo</string>
-    <string name="tab_text_2">UniversityInfo</string>
+    <string name="tab_text_1">Basic_Info</string>
+    <string name="tab_text_2">University_Info</string>
     <string name="tab_text_3">Others</string>
 </resources>
