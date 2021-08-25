@@ -68,6 +68,20 @@
         app:layout_constraintStart_toEndOf="@+id/red_background_button"
         app:layout_constraintTop_toTopOf="@+id/guideline_upper" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/green_background_button"
+        style="@style/AppTheme.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/green_background"
+        android:onClick="changeBackground"
+        android:text="@string/green_button"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_lower"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/blue_background_button"
+        app:layout_constraintTop_toTopOf="@+id/guideline_upper" />
+
+
 
 
 
