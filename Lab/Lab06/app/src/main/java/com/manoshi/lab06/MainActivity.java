@@ -1,9 +1,13 @@
 package com.manoshi.lab06;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,5 +26,50 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mShowCountTextView = findViewById(R.id.count_textview);
+        mColor = ContextCompat.getColor(this, R.color.default_background);
+        mPreferences = getSharedPreferences(sharedPrefFile, MODE_PRIVATE);
+        mCount = mPreferences.getInt(COUNT_KEY, 0);
+        mColor = mPreferences.getInt(COLOR_KEY, mColor);
+        mShowCountTextView.setText(String.format("%s", mCount));
+        mShowCountTextView.setBackgroundColor(mColor);
     }
+
+    public void changeBackground(View view) {
+        int color = ((ColorDrawable) view.getBackground()).getColor();
+        mShowCountTextView.setBackgroundColor(color);
+        mColor = color;
+    }
+
+    public void countUp(View view) {
+        mCount++;
+        mShowCountTextView.setText(String.format("%s", mCount));
+    }
+
+    public void reset(View view) {
+        mCount = 0;
+        mShowCountTextView.setText(String.format("%s", mCount));
+        mColor = mPreferences.getInt(COLOR_KEY, mColor);
+        mShowCountTextView.setBackgroundColor(mColor);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        SharedPreferences.Editor editor = mPreferences.edit();
+        boolean countSave = mPreferences.getBoolean(COUNT_SAVE_KEY, true);
+        if (countSave){
+            editor.putInt(COUNT_KEY, mCount);
+        }
+        else{
+            editor.putInt(COUNT_KEY, 0);
+        }
+        editor.apply();
+    }
+
+    public void onSettingsClick(View view) {
+        Intent intent = new Intent(this, SettingsActivity.class);
+        startActivity(intent);
+    }
+
 }
