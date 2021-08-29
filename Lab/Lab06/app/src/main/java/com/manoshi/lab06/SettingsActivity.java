@@ -76,7 +76,7 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
                 currentSpinnerSetting = "Default";
                 break;
             case "Black":
-                spinnerSelectedColor = ContextCompat.getColor(this, R.color.black);
+                spinnerSelectedColor = ContextCompat.getColor(this, R.color.colorAccent);
                 currentSpinnerSetting = "Black";
                 break;
             case "Red":
@@ -84,7 +84,7 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
                 currentSpinnerSetting = "Red";
                 break;
             case "Blue":
-                spinnerSelectedColor = ContextCompat.getColor(this, R.color.blue_background);
+                spinnerSelectedColor = ContextCompat.getColor(this, R.color.colorPrimaryDark);
                 currentSpinnerSetting = "Blue";
                 break;
             case "Green":
