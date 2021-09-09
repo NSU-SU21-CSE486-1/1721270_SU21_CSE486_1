@@ -1,7 +1,5 @@
 package com.manoshi.lab07;
 
-package com.android.example.roomwordssample;
-
 import android.arch.lifecycle.LiveData;
 import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Delete;
