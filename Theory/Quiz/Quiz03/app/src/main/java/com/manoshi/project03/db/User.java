@@ -9,9 +9,15 @@ public class User {
     @PrimaryKey(autoGenerate = true)
     public int uid;
 
-    @ColumnInfo(name = "first_name")
-    public String firstname;
+    @ColumnInfo(name = "Name")
+    public String name;
 
-    @ColumnInfo(name = "Last_name")
-    public String lastname;
+    @ColumnInfo(name = "Birth of Date")
+    public String date;
+
+    @ColumnInfo(name = "NID")
+    public String NID;
+
+    @ColumnInfo(name = "Blood group")
+    public String bg;
 }

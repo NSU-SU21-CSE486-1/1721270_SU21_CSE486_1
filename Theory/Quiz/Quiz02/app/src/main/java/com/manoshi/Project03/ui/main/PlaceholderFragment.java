@@ -1,4 +1,4 @@
-package com.manoshi.project02.ui.main;
+package com.manoshi.Project03.ui.main;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,8 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.manoshi.project02.R;
-import com.manoshi.project02.databinding.FragmentMainBinding;
+import com.manoshi.Project03.databinding.FragmentMainBinding;
 
 /**
  * A placeholder fragment containing a simple view.

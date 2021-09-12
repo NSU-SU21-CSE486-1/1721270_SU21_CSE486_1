@@ -1,4 +1,4 @@
-package com.manoshi.project02;
+package com.manoshi.Project03;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,10 +9,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class BasicInformation extends Fragment {
+public class UniversityAffiliation extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment1_layout, container, false);
+        return inflater.inflate(R.layout.fragment2_layout, container, false);
     }
 }

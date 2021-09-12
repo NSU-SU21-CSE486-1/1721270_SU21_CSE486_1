@@ -1,4 +1,4 @@
-package com.manoshi.project02;
+package com.manoshi.Project03;
 
 import android.os.Bundle;
 
@@ -9,12 +9,10 @@ import com.google.android.material.tabs.TabLayout;
 import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 
-import com.manoshi.project02.ui.main.SectionsPagerAdapter;
-import com.manoshi.project02.databinding.ActivityMainBinding;
+import com.manoshi.Project03.ui.main.SectionsPagerAdapter;
+import com.manoshi.Project03.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 

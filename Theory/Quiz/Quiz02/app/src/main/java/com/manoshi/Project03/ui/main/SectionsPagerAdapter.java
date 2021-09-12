@@ -1,4 +1,4 @@
-package com.manoshi.project02.ui.main;
+package com.manoshi.Project03.ui.main;
 
 import android.content.Context;
 
@@ -8,10 +8,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.manoshi.project02.BasicInformation;
-import com.manoshi.project02.Others;
-import com.manoshi.project02.R;
-import com.manoshi.project02.UniversityAffiliation;
+import com.manoshi.Project03.BasicInformation;
+import com.manoshi.Project03.Others;
+import com.manoshi.Project03.R;
+import com.manoshi.Project03.UniversityAffiliation;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to

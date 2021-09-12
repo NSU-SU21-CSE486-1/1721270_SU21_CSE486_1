@@ -1,4 +1,4 @@
-package com.manoshi.project02.ui.main;
+package com.manoshi.Project03.ui.main;
 
 import androidx.arch.core.util.Function;
 import androidx.lifecycle.LiveData;
