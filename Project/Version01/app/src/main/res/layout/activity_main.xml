@@ -50,18 +50,20 @@
                 android:hint="Password"
                 android:id="@+id/login_password"
                 />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Log In"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:id="@+id/btn_login"
+                />
+
         </LinearLayout>
 
 
     </ScrollView>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="316dp" />
 
 </LinearLayout>
