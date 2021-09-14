@@ -67,6 +67,11 @@
                 android:padding="10dp"
                 android:textAppearance="?android:textAppearanceLarge"
                 />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                />
 
         </LinearLayout>
 
