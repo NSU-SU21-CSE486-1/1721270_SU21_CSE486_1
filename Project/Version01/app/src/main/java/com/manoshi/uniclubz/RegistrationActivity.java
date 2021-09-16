@@ -15,10 +15,15 @@ public class RegistrationActivity extends AppCompatActivity {
     private Button btnReg;
     private Button btnLogin;
 
+    //Firebase connection
+    private FireBaseAuth mAuth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
+
+        mAuth = FireBaseAuth.getInstance();
         Registration();
     }
     private void Registration(){
@@ -46,8 +51,10 @@ public class RegistrationActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
             }
         });
+    }
+
+    private static class FireBaseAuth {
     }
 }
