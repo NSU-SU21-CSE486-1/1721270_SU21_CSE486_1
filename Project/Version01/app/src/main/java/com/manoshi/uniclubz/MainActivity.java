@@ -18,5 +18,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        LoginFunction();
+    }
+
+    private void LoginFunction(){
+
+        email = findViewById(R.id.email_login);
+        password = findViewById(R.id.login_password);
+
+        btnLogin = findViewById(R.id.btn_login);
+        btnRegistration = findViewById(R.id.btn_reg);
     }
 }
