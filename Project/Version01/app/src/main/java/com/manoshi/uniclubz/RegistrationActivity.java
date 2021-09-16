@@ -3,6 +3,7 @@ package com.manoshi.uniclubz;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -31,9 +32,14 @@ public class RegistrationActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String email = emailReg.getText().toString().trim();
                 String pass = passReg.getText().toString().trim();
-
-
-
+                if (TextUtils.isEmpty(email)){
+                    emailReg.setError("Required Field");
+                    return;
+                }
+                if (TextUtils.isEmpty(pass)){
+                    passReg.setError("Required field");
+                    return;
+                }
             }
         });
 
