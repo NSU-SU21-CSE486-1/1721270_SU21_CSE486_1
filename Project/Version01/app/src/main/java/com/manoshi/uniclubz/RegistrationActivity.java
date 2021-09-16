@@ -3,6 +3,7 @@ package com.manoshi.uniclubz;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -55,6 +56,8 @@ public class RegistrationActivity extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
                             Toast.makeText(getApplicationContext(), "Successful", Toast.LENGTH_SHORT).show();
+
+                            startActivity(new Intent(getApplicationContext(), HomeActivity.class));
                         }
                     }
                 });
