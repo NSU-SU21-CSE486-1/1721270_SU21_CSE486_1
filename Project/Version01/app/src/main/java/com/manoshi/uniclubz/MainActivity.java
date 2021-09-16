@@ -3,6 +3,7 @@ package com.manoshi.uniclubz;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -28,5 +29,18 @@ public class MainActivity extends AppCompatActivity {
 
         btnLogin = findViewById(R.id.btn_login);
         btnRegistration = findViewById(R.id.btn_reg);
+
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+        btnRegistration.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 }
