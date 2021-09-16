@@ -3,6 +3,7 @@ package com.manoshi.uniclubz;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -22,5 +23,21 @@ public class RegistrationActivity extends AppCompatActivity {
     private void Registration(){
         emailReg = findViewById(R.id.email_registration);
         passReg = findViewById(R.id.registration_password);
+        btnReg = findViewById(R.id.btn_registration);
+        btnLogin = findViewById(R.id.btn_login);
+
+        btnReg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 }
