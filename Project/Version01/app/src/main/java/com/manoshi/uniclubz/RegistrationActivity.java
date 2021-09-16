@@ -29,6 +29,10 @@ public class RegistrationActivity extends AppCompatActivity {
         btnReg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String email = emailReg.getText().toString().trim();
+                String pass = passReg.getText().toString().trim();
+
+
 
             }
         });
