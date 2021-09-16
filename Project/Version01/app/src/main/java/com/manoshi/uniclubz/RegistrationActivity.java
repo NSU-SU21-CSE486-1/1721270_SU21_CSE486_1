@@ -1,12 +1,17 @@
 package com.manoshi.uniclubz;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnCompleteListener;
 
 public class RegistrationActivity extends AppCompatActivity {
 
@@ -45,6 +50,14 @@ public class RegistrationActivity extends AppCompatActivity {
                     passReg.setError("Required field");
                     return;
                 }
+                mAuth.createUserWithEmailAndPassword(email,pass).addOnCompleteListener(new OnCompleteListener()) {
+                    @Override
+                            public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()){
+                            Toast.makeText(getApplicationContext(), "Successful", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
             }
         });
 
@@ -53,8 +66,5 @@ public class RegistrationActivity extends AppCompatActivity {
             public void onClick(View v) {
             }
         });
-    }
-
-    private static class FireBaseAuth {
     }
 }
