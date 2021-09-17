@@ -42,7 +42,9 @@ public class MainActivity extends AppCompatActivity {
                     email.setError("Required Field");
                     return;
                 }
-
+                if (TextUtils.isEmpty(pass)){
+                    password.setError("Required Field");
+                }
             }
         });
         btnRegistration.setOnClickListener(new View.OnClickListener() {
