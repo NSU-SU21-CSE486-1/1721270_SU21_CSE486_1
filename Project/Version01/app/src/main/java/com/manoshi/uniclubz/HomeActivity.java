@@ -19,7 +19,14 @@ public class HomeActivity extends AppCompatActivity {
         btnpost = findViewById(R.id.btn_post);
         btnprofile = findViewById(R.id.btn_profile);
 
-        btnclub.setOnClickListener(new View.OnClickListener() {
+        btnclub.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        btnpost.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
