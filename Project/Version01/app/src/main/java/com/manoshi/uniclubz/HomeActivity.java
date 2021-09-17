@@ -22,6 +22,7 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         toolbar = findViewById(R.id.toolbar_home);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Club Connectivity App");
         btnclub = findViewById(R.id.btn_club);
         btnpost = findViewById(R.id.btn_post);
         btnprofile = findViewById(R.id.btn_profile);
