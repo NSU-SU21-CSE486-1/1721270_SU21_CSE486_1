@@ -12,6 +12,7 @@ import android.widget.EditText;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class InsertClubPostActivity extends AppCompatActivity {
 
@@ -39,6 +40,8 @@ public class InsertClubPostActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         FirebaseUser mUser = mAuth.getCurrentUser();
         String uId = mUser.getUid();
+
+        mClubPost = FirebaseDatabase.getInstance().getReference().child("Event Post").child(uId);
         InsertClub();
     }
 
