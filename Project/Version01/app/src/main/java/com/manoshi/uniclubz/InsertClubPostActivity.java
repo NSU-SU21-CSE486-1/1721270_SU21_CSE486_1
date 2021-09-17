@@ -3,11 +3,13 @@ package com.manoshi.uniclubz;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -86,7 +88,8 @@ public class InsertClubPostActivity extends AppCompatActivity {
 
                 Data data = new Data(title,description,name,date,id,time);
                 mClubPost.child(id).setValue(data);
-
+                Toast.makeText(getApplicationContext(), "Successful", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getApplicationContext(), PostClubActivity.class));
             }
         });
     }
