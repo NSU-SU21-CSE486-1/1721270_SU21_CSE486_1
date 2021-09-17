@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class RegistrationActivity extends AppCompatActivity {
 
@@ -22,14 +23,14 @@ public class RegistrationActivity extends AppCompatActivity {
     private Button btnLogin;
 
     //Firebase connection
-    private FireBaseAuth mAuth;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
 
-        mAuth = FireBaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance();
         Registration();
     }
     private void Registration(){
