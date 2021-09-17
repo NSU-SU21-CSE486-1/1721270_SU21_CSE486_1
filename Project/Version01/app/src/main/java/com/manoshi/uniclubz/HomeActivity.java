@@ -14,5 +14,8 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        btnclub = findViewById(R.id.btn_club);
+        btnpost = findViewById(R.id.btn_post);
+        btnprofile = findViewById(R.id.btn_profile);
     }
 }
