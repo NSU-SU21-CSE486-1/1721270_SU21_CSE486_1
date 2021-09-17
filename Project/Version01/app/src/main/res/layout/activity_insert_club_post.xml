@@ -154,7 +154,10 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_margin="30dp"
+                android:text="POST"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:background="@drawable/club_post_button"
                 android:id="@+id/btn_club_post"/>
 
         </LinearLayout>

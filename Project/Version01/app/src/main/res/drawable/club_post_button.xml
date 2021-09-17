@@ -4,4 +4,9 @@
         android:startColor="#7C2E2E"
         android:endColor="@color/white"/>
 
+    <corners android:bottomLeftRadius="20dp"
+        android:bottomRightRadius="20dp"
+        android:topLeftRadius="20dp"
+        android:topRightRadius="20dp"/>
+
 </shape>
