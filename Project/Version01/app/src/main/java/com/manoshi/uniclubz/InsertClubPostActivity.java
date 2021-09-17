@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -43,6 +44,23 @@ public class InsertClubPostActivity extends AppCompatActivity {
                 String description = event_description.getText().toString().trim();
                 String name = club_name.getText().toString().trim();
                 String date = event_date.getText().toString().trim();
+
+                if (TextUtils.isEmpty(title)){
+                    event_title.setError("Required Field");
+                    return;
+                }
+                if (TextUtils.isEmpty(description)){
+                    event_description.setError("Required Field");
+                    return;
+                }
+                if (TextUtils.isEmpty(name)){
+                    club_name.setError("Required Field");
+                    return;
+                }
+                if (TextUtils.isEmpty(date)){
+                    event_date.setError("Required Field");
+                    return;
+                }
             }
         });
     }
