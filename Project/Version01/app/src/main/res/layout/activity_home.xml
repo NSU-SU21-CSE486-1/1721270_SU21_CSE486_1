@@ -22,8 +22,18 @@
             android:text="See all club post"
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="#D9CECE"
-            android:id="@+id/btn_allclub"
+            android:id="@+id/btn_club"
+            />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:text="Post as club"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/white"
+            android:id="@+id/btn_post"
             />
     </LinearLayout>
 
