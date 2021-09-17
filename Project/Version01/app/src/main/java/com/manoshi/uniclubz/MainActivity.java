@@ -71,6 +71,10 @@ public class MainActivity extends AppCompatActivity {
                         if (task.isSuccessful()){
                             Toast.makeText(getApplicationContext(),"Successful",Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+
+                            mDialog.dismiss();
+                        } else {
+                            Toast.makeText(getApplicationContext(), "Login Failed", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
