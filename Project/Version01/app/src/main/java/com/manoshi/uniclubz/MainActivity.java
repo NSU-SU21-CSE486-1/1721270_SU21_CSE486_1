@@ -60,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
                     password.setError("Required Field");
                 }
 
-
                 mAuth.signInWithEmailAndPassword(mEmail,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
