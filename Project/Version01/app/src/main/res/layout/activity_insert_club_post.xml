@@ -131,7 +131,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Club Name"
+                        android:text="Date"
                         android:padding="7dp"
                         android:textAppearance="?android:textAppearanceMedium"/>
 
@@ -145,7 +145,7 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/club_name"/>
+                        android:id="@+id/club_date"/>
 
                 </RelativeLayout>
 
