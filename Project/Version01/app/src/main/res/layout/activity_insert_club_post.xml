@@ -24,6 +24,12 @@
                 android:orientation="horizontal"
                 android:layout_height="wrap_content">
 
+                <RelativeLayout
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content">
+
+                </RelativeLayout>
+
             </LinearLayout>
 
         </LinearLayout>
