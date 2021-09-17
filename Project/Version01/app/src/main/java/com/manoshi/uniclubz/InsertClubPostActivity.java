@@ -14,6 +14,9 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.text.DateFormat;
+import java.util.Date;
+
 public class InsertClubPostActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
@@ -76,6 +79,9 @@ public class InsertClubPostActivity extends AppCompatActivity {
                     event_date.setError("Required Field");
                     return;
                 }
+
+                String id = mClubPost.push().getKey();
+                String time = DateFormat.getDateTimeInstance().format(new Date());
             }
         });
     }
