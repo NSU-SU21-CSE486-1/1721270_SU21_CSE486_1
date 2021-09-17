@@ -3,6 +3,7 @@ package com.manoshi.uniclubz;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -27,12 +28,16 @@ public class MainActivity extends AppCompatActivity {
     //Firebase
     private FirebaseAuth mAuth;
 
+    //progress dialog
+    private ProgressDialog mDialog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         mAuth = FirebaseAuth.getInstance();
+        mDialog = new ProgressDialog(this);
         LoginFunction();
     }
 
