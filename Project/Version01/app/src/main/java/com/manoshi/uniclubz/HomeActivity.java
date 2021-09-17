@@ -1,6 +1,7 @@
 package com.manoshi.uniclubz;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +12,9 @@ public class HomeActivity extends AppCompatActivity {
     private Button btnclub;
     private Button btnpost;
     private Button btnprofile;
+
+    //Toolbar
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
