@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -25,6 +26,7 @@ public class InsertClubPostActivity extends AppCompatActivity {
         toolbar = findViewById(R.id.insert_club_toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Post Event");
+        InsertClub();
     }
 
     private void InsertClub(){
@@ -32,6 +34,14 @@ public class InsertClubPostActivity extends AppCompatActivity {
         event_description = findViewById(R.id.club_description);
         club_name = findViewById(R.id.club_name);
         event_date = findViewById(R.id.club_date);
+
+        btn_post_event = findViewById(R.id.btn_club_post);
+        btn_post_event.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 
 }
