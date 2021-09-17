@@ -21,6 +21,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         toolbar = findViewById(R.id.toolbar_home);
+        setSupportActionBar(toolbar);
         btnclub = findViewById(R.id.btn_club);
         btnpost = findViewById(R.id.btn_post);
         btnprofile = findViewById(R.id.btn_profile);
