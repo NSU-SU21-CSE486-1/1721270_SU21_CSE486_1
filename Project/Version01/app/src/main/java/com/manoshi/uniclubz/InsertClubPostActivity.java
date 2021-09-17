@@ -9,6 +9,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+
 public class InsertClubPostActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
@@ -19,6 +23,10 @@ public class InsertClubPostActivity extends AppCompatActivity {
 
     private Button btn_post_event;
 
+    //Firebase
+    private FirebaseAuth mAuth;
+    private DatabaseReference mClubPost;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +35,10 @@ public class InsertClubPostActivity extends AppCompatActivity {
         toolbar = findViewById(R.id.insert_club_toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Post Event");
+
+        mAuth = FirebaseAuth.getInstance();
+        FirebaseUser mUser = mAuth.getCurrentUser();
+        String uId = mUser.getUid();
         InsertClub();
     }
 
