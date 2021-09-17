@@ -3,6 +3,7 @@ package com.manoshi.uniclubz;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 public class HomeActivity extends AppCompatActivity {
@@ -17,5 +18,12 @@ public class HomeActivity extends AppCompatActivity {
         btnclub = findViewById(R.id.btn_club);
         btnpost = findViewById(R.id.btn_post);
         btnprofile = findViewById(R.id.btn_profile);
+
+        btnclub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 }
