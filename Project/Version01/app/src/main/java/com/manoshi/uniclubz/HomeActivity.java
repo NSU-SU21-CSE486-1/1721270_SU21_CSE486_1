@@ -30,7 +30,7 @@ public class HomeActivity extends AppCompatActivity {
         btnpost.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent(getApplicationContext(), PostClubActivity.class));
             }
         });
 
