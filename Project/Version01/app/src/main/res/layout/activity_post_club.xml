@@ -20,6 +20,7 @@
             android:layout_marginBottom="25dp"
             android:layout_marginRight="25dp"
             app:fabSize="normal"
+            android:src="@drawable/add"
             android:id="@+id/fab_add"
             android:backgroundTint="#152E39"
             android:layout_height="wrap_content"/>

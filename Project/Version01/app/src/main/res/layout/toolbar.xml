@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:theme="@style/Theme.AppCompat.DayNight"
     app:popupTheme="@style/Theme.AppCompat.DayNight"
-    android:background="@color/toolbar_color"
+    android:background="#2196F3"
     android:layout_height="wrap_content">
 
 </androidx.appcompat.widget.Toolbar>
