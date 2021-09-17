@@ -7,4 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".InsertClubPostActivity">
 
+    <include layout="@layout/toolbar"
+        android:id="@+id/insert_club_toolbar"/>
+
 </LinearLayout>
