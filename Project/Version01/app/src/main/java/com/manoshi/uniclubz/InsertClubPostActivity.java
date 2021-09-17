@@ -39,7 +39,10 @@ public class InsertClubPostActivity extends AppCompatActivity {
         btn_post_event.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                String title = event_title.getText().toString().trim();
+                String description = event_description.getText().toString().trim();
+                String name = club_name.getText().toString().trim();
+                String date = event_date.getText().toString().trim();
             }
         });
     }
