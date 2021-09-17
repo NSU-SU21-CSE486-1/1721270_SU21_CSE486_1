@@ -32,5 +32,12 @@ public class HomeActivity extends AppCompatActivity {
 
             }
         });
+
+        btnprofile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 }
