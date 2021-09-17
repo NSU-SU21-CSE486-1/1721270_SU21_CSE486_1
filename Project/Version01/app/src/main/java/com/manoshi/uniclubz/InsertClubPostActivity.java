@@ -13,6 +13,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.manoshi.uniclubz.Model.Data;
 
 import java.text.DateFormat;
 import java.util.Date;
@@ -82,6 +83,10 @@ public class InsertClubPostActivity extends AppCompatActivity {
 
                 String id = mClubPost.push().getKey();
                 String time = DateFormat.getDateTimeInstance().format(new Date());
+
+                Data data = new Data(title,description,name,date,id,time);
+                mClubPost.child(id).setValue(data);
+
             }
         });
     }
