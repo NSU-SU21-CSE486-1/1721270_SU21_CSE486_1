@@ -15,5 +15,8 @@ public class InsertClubPostActivity extends AppCompatActivity {
         setContentView(R.layout.activity_insert_club_post);
 
         toolbar = findViewById(R.id.insert_club_toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Post Event");
     }
+
 }
