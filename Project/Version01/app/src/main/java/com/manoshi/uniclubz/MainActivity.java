@@ -62,6 +62,9 @@ public class MainActivity extends AppCompatActivity {
                 if (TextUtils.isEmpty(pass)){
                     password.setError("Required Field");
                 }
+
+                mDialog.setMessage("Processing");
+                mDialog.show();
                 mAuth.signInWithEmailAndPassword(mEmail,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
