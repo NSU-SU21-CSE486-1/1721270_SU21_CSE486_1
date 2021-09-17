@@ -27,4 +27,11 @@ public class InsertClubPostActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("Post Event");
     }
 
+    private void InsertClub(){
+        event_title = findViewById(R.id.club_title);
+        event_description = findViewById(R.id.club_description);
+        club_name = findViewById(R.id.club_name);
+        event_date = findViewById(R.id.club_date);
+    }
+
 }
