@@ -53,3 +53,5 @@
 <p> This is the page after adding all the information.</p>
 <p align="center"> <img src="https://user-images.githubusercontent.com/85054248/133888951-617a15d4-2abf-4c18-9c05-a64312a28c77.jpeg" /> </p>
 
+<p> Challenges </P>
+<p> Admin profile could not create to handle all the activity. In event post club there were some difficulties to post it and adding it in database. Blood donation part was having some problem when trying to connect with database.  </P>
